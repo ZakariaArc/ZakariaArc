@@ -1,0 +1,15 @@
+{
+  "name": "Zakaria Archach",
+  "username": "ZakariaArc",
+  "projects": [
+    {"slug":"e-esj","name":"e-ESJ","visibility":"PRIVATE","category":"HEALTHCARE","description":["Healthcare and medical","teleconsultation platform."],"tech":["Next.js","NestJS","TypeScript","MySQL"],"icon":"health"},
+    {"slug":"nticemploi","name":"NTICEmploi","visibility":"PRIVATE","category":"EDUCATION","description":["Class timetable management","for an organized academic day."],"tech":["HTML / CSS","JavaScript","Cloudflare Workers"],"icon":"calendar"},
+    {"slug":"tracksnap","name":"TrackSnap","visibility":"PRIVATE","category":"MUSIC","description":["A project built around Spotify","and music."],"tech":["Node.js","Express","MongoDB"],"icon":"music"},
+    {"slug":"pictracker","name":"PicTracker","visibility":"PERSONAL PROJECT","badge":"Personal","category":"PROFILE PICTURES","description":["Profile picture change tracking","for public usernames."],"tech":["React","Node.js","Express","MongoDB"],"icon":"pictures"},
+    {"slug":"techtrack","name":"TechTrack","visibility":"PUBLIC · ALX CAPSTONE","category":"LEARNING","description":["Curated programming video courses.","No account required."],"tech":["HTML / CSS","JavaScript","Bootstrap","jQuery"],"icon":"courses"}
+  ],
+  "technologies": [
+    ["html5","HTML5"],["css3","CSS3"],["javascript","JavaScript"],["typescript","TypeScript"],["react","React"],["nextdotjs","Next.js"],["nestjs","NestJS"],["nodedotjs","Node.js"],["python","Python"],["mysql","MySQL"],["mongodb","MongoDB"],["git","Git"],["linux","Linux"]
+  ],
+  "music": {"title":"Pyramids","artist":"Frank Ocean","album":"channel ORANGE","position":424,"duration":592,"url":"https://www.youtube.com/watch?v=dMV31MWIjLE&t=424s"}
+}

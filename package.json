@@ -1,0 +1,27 @@
+{
+  "name": "zakariaarc",
+  "version": "1.0.0",
+  "description": "Build tools for Zakaria Archach's GitHub profile graphics",
+  "private": true,
+  "scripts": {
+    "build:assets": "node scripts/build-assets.mjs",
+    "build:stats": "node scripts/update-stats.mjs --cached",
+    "preview:build": "node scripts/build-preview.mjs",
+    "preview": "node scripts/serve-preview.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZakariaArc/ZakariaArc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-only",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ZakariaArc/ZakariaArc/issues"
+  },
+  "homepage": "https://github.com/ZakariaArc/ZakariaArc#readme",
+  "devDependencies": {
+    "opentype.js": "1.3.4"
+  }
+}
