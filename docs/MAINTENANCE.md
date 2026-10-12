@@ -64,3 +64,5 @@ Tables were considered, but GitHub controls their padding and borders, and they 
 ## Publication
 
 The owner approved the finalized design for publication to the main branch of ZakariaArc/ZakariaArc. Build scripts do not push, edit remote repositories, change visibility, or alter profile settings. For future updates, inspect the complete staged contents before committing, push only to this profile repository, then verify https://github.com/ZakariaArc in the browser. Keep preview output, dependencies, credentials, and private source outside the published tree.
+
+The owner separately approved the complete light theme on 12 October 2026 for publication to main. Its raster prompts, asset paths, theme source order, and build instructions are in [LIGHT-MODE.md](LIGHT-MODE.md). `npm run build:assets` builds the existing dark graphics followed by their light companions. Statistics refreshes update both themes atomically from the same snapshot. PicTracker's Personal badge has been removed at the owner's request.

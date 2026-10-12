@@ -15,6 +15,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readFileSync } from 'node:fs';
 import { outlineSvgText, type } from './typography.mjs';
+import { lightSvg } from './light-theme.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 const USER = 'ZakariaArc';
@@ -346,7 +347,7 @@ function validateSnapshot(data) {
 }
 
 function cardFiles(data) {
-  return [
+  const dark = [
     ['assets/stats.svg', renderStats(data)],
     ['assets/contributions.svg', renderContributions(data)],
     ['assets/stats-mobile.svg', renderStatsMobile(data)],
@@ -354,6 +355,7 @@ function cardFiles(data) {
     ['assets/activity.svg', renderActivity(data)],
     ['assets/activity-mobile.svg', renderActivityMobile(data)],
   ];
+  return [...dark, ...dark.map(([file, svg]) => [file.replace(/\.svg$/, '-light.svg'), lightSvg(svg)])];
 }
 
 async function replaceSnapshot(files) {

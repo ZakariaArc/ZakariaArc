@@ -4,7 +4,7 @@
   "description": "Build tools for Zakaria Archach's GitHub profile graphics",
   "private": true,
   "scripts": {
-    "build:assets": "node scripts/build-assets.mjs",
+    "build:assets": "node scripts/build-assets.mjs && node scripts/build-light-assets.mjs",
     "build:stats": "node scripts/update-stats.mjs --cached",
     "preview:build": "node scripts/build-preview.mjs",
     "preview": "node scripts/serve-preview.mjs"
