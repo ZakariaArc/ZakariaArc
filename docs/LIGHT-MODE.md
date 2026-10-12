@@ -2,7 +2,9 @@
 
 Status: the owner approved the complete light design on 12 October 2026 for publication to ZakariaArc/ZakariaArc main. Live profile checks follow publication.
 
-Every README picture selects a dark asset with prefers-color-scheme: dark and uses a light fallback. Narrow sources precede desktop sources at 600px. The same hero scales responsively in both layouts. No README JavaScript, page CSS, filters or external font loads are needed.
+The hero uses a dark source with prefers-color-scheme: dark and a light fallback. Every other component uses two adjacent pictures, one per theme. Each picture places its uncombined max-width: 600px source first, followed by a prefers-color-scheme desktop source. The fallback img carries GitHub's matching #gh-dark-mode-only or #gh-light-mode-only visibility fragment. The same hero scales responsively in both layouts. No README JavaScript, page CSS, filters or external font loads are needed.
+
+Live testing found that GitHub rewrites a source containing prefers-color-scheme to a theme-wide query and discards an additional width condition. Separating theme visibility from responsive selection prevents dark mobile images appearing on desktop. Both existing desktop and mobile assets remain unchanged. GitHub documents the visibility fragments in its [theme-context changelog](https://github.blog/changelog/2021-11-24-specify-theme-context-for-images-in-markdown/).
 
 All prior dark assets remain unchanged except PicTracker and its two project grids, where the owner requested removal of the Personal badge. Light SVGs preserve the exact original geometry and Poppins outlines, using a deliberate ink, off-white, chip and border palette in scripts/light-theme.mjs. The original ALX mark is recolored to black. Contribution intensity progresses from pale gray to black. The original orange album bytes are unchanged.
 
