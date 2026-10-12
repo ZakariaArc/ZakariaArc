@@ -81,3 +81,7 @@ Use case: style-transfer. Asset type: faded background for a light-theme profile
 The approved assets were published to main. GitHub rewrites theme source queries, so responsive components use separate theme pictures with theme fragments on their enclosing image links. Width-only sources remain independent. Both desktop themes were verified on the actual profile: exactly 16 visible components, all images loaded, correct desktop artwork, and no duplicate theme. Native disclosures open with the keyboard; the coursework section retains all 18 destination links. Image wrappers also make the disclosure artwork a link; use the disclosure arrow or keyboard to expand it.
 
 Both mobile variants loaded correctly in the local 360px preview. Final mobile testing on GitHub could not be completed because the browser viewport override repeatedly timed out or left background tabs at 1280px. This is an outstanding verification limitation, not a passed mobile test. The original GitHub Sync with system appearance preference and normal viewport were restored.
+
+### Image clicks stay on the profile
+
+Decorative image wrappers now use local theme fragments (href="#gh-dark-mode-only" or href="#gh-light-mode-only") instead of asset paths. This preserves GitHub theme visibility without opening repository image files. Intentional TechTrack, YouTube, current-activity, and coursework links are unchanged. GitHub README sanitization does not allow JavaScript to cancel clicks; these same-page fragments can update the URL hash.
