@@ -75,3 +75,9 @@ Saved asset: assets/project-art/pictracker-light.jpg
 Final prompt:
 
 Use case: style-transfer. Asset type: faded background for a light-theme profile picture tracking project card. Input is the EDIT TARGET. Rebuild this exact abstract avatar version-history illustration on white/off-white: dominant circular anonymous bust profile picture on the right, subtle connected smaller avatar circles and timeline/history arc, faint outlined profile card fragments at far right. Black and graphite fine outlines with pale gray fills and restrained shadows. Preserve same right-heavy composition and subject purpose: monitoring changes to public username profile pictures. Left 55 percent must be almost blank white negative space for dark UI copy. Wide 1942x809 crop. No real faces, text, labels, logos, colored lights, lenses, cameras, borders or added UI copy. No global negative inversion.
+
+## Live publication verification - 12 October 2026
+
+The approved assets were published to main. GitHub rewrites theme source queries, so responsive components use separate theme pictures with theme fragments on their enclosing image links. Width-only sources remain independent. Both desktop themes were verified on the actual profile: exactly 16 visible components, all images loaded, correct desktop artwork, and no duplicate theme. Native disclosures open with the keyboard; the coursework section retains all 18 destination links. Image wrappers also make the disclosure artwork a link; use the disclosure arrow or keyboard to expand it.
+
+Both mobile variants loaded correctly in the local 360px preview. Final mobile testing on GitHub could not be completed because the browser viewport override repeatedly timed out or left background tabs at 1280px. This is an outstanding verification limitation, not a passed mobile test. The original GitHub Sync with system appearance preference and normal viewport were restored.
